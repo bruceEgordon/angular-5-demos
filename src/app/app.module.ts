@@ -1,17 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { StarterComponent } from './chapter4/4.3.component';
-
+import {FormsModule} from '@angular/forms';
+import { MyFeatureModule } from './chapter10/myfeature.module';
+import { Chapter5 } from './chapter10/5.9.component';
 
 @NgModule({
   declarations: [
-    StarterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    MyFeatureModule
   ],
   providers: [],
-  bootstrap: [StarterComponent]
+  bootstrap: [Chapter5]
 })
 export class AppModule { }

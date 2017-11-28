@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { PeopleService } from "./12.19.people.service";
+import { PeopleService } from "./12.21.people.post.service";
 
 @Component({
     selector: "chapter12",
@@ -16,7 +16,7 @@ import { PeopleService } from "./12.19.people.service";
 export class Chapter12 {
     list: Object[];
     constructor( srvPeople: PeopleService){
-        srvPeople.people.subscribe(people => this.list = people,
+        srvPeople.peopleOptions.subscribe(people => this.list = people,
         error => console.error("Error: " + error));
     }
 }

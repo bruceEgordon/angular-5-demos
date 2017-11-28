@@ -32,5 +32,7 @@ export class Chapter9 {
         this.myForm.patchValue({
             first: "Homer"
         })
+        //seems easier for single changes
+        this.myForm.controls["last"].setValue("Simpson");
     }
 }
