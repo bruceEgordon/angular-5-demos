@@ -18,6 +18,6 @@ export class PeopleService {
         headers.append("Content-Type", "application/json");
         let requestOptions : RequestOptions = new RequestOptions({headers: headers});
         //Angular cannot write to the local file system so the following will not actually work.
-        this.peopleOptions = this.http.post('./assets/data.json', requestOptions).map(response => response.json());
+        this.peopleOptions = this.http.post('./assets/data.json', body, requestOptions).map(response => response.json());
     }
 }

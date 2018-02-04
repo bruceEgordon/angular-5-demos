@@ -10,8 +10,9 @@ import { PetService } from "./pet.service";
                 <li *ngFor="let pet of pet_data">{{pet}}</li>
             </ul>
         </div>
+        <child></child>
     `,
-    providers: [PetService]
+    providers: []
 })
 export class Chapter11 implements OnInit {
     pet_data: Object[];

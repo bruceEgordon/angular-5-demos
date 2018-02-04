@@ -11,7 +11,7 @@ import { PetService } from "./pet.service";
             </ul>
         </div>
     `,
-    providers: [ PetService ]
+    providers: [ ]
 })
 export class Child implements OnInit {
     pet_data: Object[];
@@ -20,5 +20,6 @@ export class Child implements OnInit {
 
     ngOnInit() {
         this.pet_data = this.petSrv.getPets();
+        this.pet_data.push("Frog");
     }
 }

@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from "@angular/router";
 import { HomePageComponent } from "./home.page.component";
 import { BasicFormComponent } from "./basic.form.component";
-import { PeopleListComponent } from "./people.list.component";
-import { PersonDetailComponent } from "./15.25.person.detail.component";
+import { PeopleListComponent } from "./15.27.people.component";
+import { PersonDetailComponent } from "./15.24.person.detail.component";
 
 const routes: Routes = [
     { path: '', component: HomePageComponent },
