@@ -2,20 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
-import { Chapter15 } from './chapter15/15.29.app.component';
-import {routing} from './chapter15/app.routes';
+import { Chapter14 } from './chapter14/14.8.component';
 import { HomePageComponent } from './chapter15/home.page.component';
-import { PeopleListComponent } from './chapter15/15.27.people.component';
 import { BasicFormComponent } from './chapter15/basic.form.component';
+import { PeopleListComponent } from './chapter15/15.27.people.component';
 import { PersonDetailComponent } from './chapter15/15.24.person.detail.component';
+import { routing } from './chapter15/app.routes';
+import { Chapter15 } from './chapter15/15.12.app.component';
 
 
 @NgModule({
   declarations: [
-    Chapter15,
+    Chapter14,
     HomePageComponent,
-    PeopleListComponent,
     BasicFormComponent,
+    PeopleListComponent,
     PersonDetailComponent
   ],
   imports: [
@@ -24,6 +25,6 @@ import { PersonDetailComponent } from './chapter15/15.24.person.detail.component
     routing
   ],
   providers: [],
-  bootstrap: [Chapter15]
+  bootstrap: [Chapter14]
 })
 export class AppModule { }

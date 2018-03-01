@@ -4,6 +4,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 @Component({
     selector: "chapter9",
     template: `
+        <h3>Form with control as component property</h3>
         <form [formGroup]="myForm">
             First: <input [formControl]="firstName"><br>
             Last: <input formControlName="last"><br>
@@ -25,5 +26,6 @@ export class Chapter9 implements OnInit {
 
     onSubmit(){
         console.log(this.myForm)
+        
     }
 }

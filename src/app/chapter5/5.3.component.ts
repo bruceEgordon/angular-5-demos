@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
         <p>Thre are {{days}} {{unit}} in a year!</p>
 
         <h4>Date Value</h4>
-        <p>{{today | date:'MM/dd/yyyy'}}</p>
+        <p>{{today | date:'MM/dd/yy'}}</p>
 
         <h4>Paragraph Text</h4>
         <p>{{text}}</p>

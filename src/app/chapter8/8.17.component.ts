@@ -5,11 +5,12 @@ import { Registration } from './registration.class';
     selector: "chapter8",
     templateUrl: "8.17.component.html",
     styleUrls: ["8.16.component.css"],
-    providers: [Registration]
+    //providers: [Registration]
 })
 export class Chapter8 {
-    //private tst: Test;
-    constructor(private registration: Registration){
+    private registration: Registration;
+    constructor(){
+        this.registration = new Registration();
         this.registration.name = "Cindy";
         this.registration.email = "cindy@gmail.com";
     };

@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
     selector: "chapter5",
     template: `
         <h4>Set Styles</h4>
-        <div [style.display]="inline-block" [style.width]="30" [style.height]="30" 
+        <div [style.display]="inline-block" [style.width.px]="30" [style.height.px]="30" 
             [style.backgroundColor]="isRed?'red':'blue'"></div>
         <input type="checkbox" [(ngModel)]="isRed" />Is Red
         <h4>Disable Button</h4>
